@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="C:\Users\PI210\Desktop\site.js" Link="site.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="GameHub.cs\" />
+  </ItemGroup>
+
+</Project>

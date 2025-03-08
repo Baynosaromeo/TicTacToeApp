@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+
+    <!-- Game Mode Selection -->
+    <label for="modeSelect">Select Mode:</label>
+    <select id="modeSelect">
+        <option value="ai">Player vs AI</option>
+        <option value="multiplayer">Player vs Player</option>
+    </select>
+
+    <p id="status">Player X's Turn</p>
+
+    <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+
+    <div class="controls">
+        <button id="restartBtn">Restart</button>
+        <button id="resetScoresBtn">Reset Scores</button>
+        <button id="nextGameBtn" style="display: none;">Next Game</button>
+    </div>
+
+    <p>Wins: X - <span id="xWins">0</span> | O - <span id="oWins">0</span> | Draws - <span id="draws">0</span></p>
+
+    <script src="js/tictactoe.js"></script>
+</body>
+</html>
